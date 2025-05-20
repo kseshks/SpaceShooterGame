@@ -42,6 +42,10 @@
             this.labelLose = new System.Windows.Forms.Label();
             this.bRestart = new System.Windows.Forms.Button();
             this.bullet = new System.Windows.Forms.PictureBox();
+            this.labelScore = new System.Windows.Forms.Label();
+            this.heart3 = new System.Windows.Forms.PictureBox();
+            this.heart2 = new System.Windows.Forms.PictureBox();
+            this.heart1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spaceship)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comet1)).BeginInit();
@@ -51,6 +55,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.comet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comet6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bullet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.heart3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.heart2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.heart1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -158,17 +165,17 @@
             this.labelLose.BackColor = System.Drawing.Color.Black;
             this.labelLose.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelLose.ForeColor = System.Drawing.Color.Red;
-            this.labelLose.Location = new System.Drawing.Point(381, 87);
+            this.labelLose.Location = new System.Drawing.Point(119, 89);
             this.labelLose.Name = "labelLose";
-            this.labelLose.Size = new System.Drawing.Size(274, 55);
+            this.labelLose.Size = new System.Drawing.Size(271, 55);
             this.labelLose.TabIndex = 8;
-            this.labelLose.Text = "YOU LOST";
+            this.labelLose.Text = "Game over";
             // 
             // bRestart
             // 
             this.bRestart.BackColor = System.Drawing.Color.LightGreen;
             this.bRestart.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bRestart.Location = new System.Drawing.Point(448, 174);
+            this.bRestart.Location = new System.Drawing.Point(439, 204);
             this.bRestart.Name = "bRestart";
             this.bRestart.Size = new System.Drawing.Size(196, 70);
             this.bRestart.TabIndex = 9;
@@ -186,11 +193,63 @@
             this.bullet.TabIndex = 10;
             this.bullet.TabStop = false;
             // 
+            // labelScore
+            // 
+            this.labelScore.AutoSize = true;
+            this.labelScore.BackColor = System.Drawing.Color.Black;
+            this.labelScore.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelScore.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.labelScore.Location = new System.Drawing.Point(911, 53);
+            this.labelScore.Name = "labelScore";
+            this.labelScore.Size = new System.Drawing.Size(80, 24);
+            this.labelScore.TabIndex = 11;
+            this.labelScore.Text = "Score: 0";
+            // 
+            // heart3
+            // 
+            this.heart3.BackColor = System.Drawing.Color.Black;
+            this.heart3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("heart3.BackgroundImage")));
+            this.heart3.Image = ((System.Drawing.Image)(resources.GetObject("heart3.Image")));
+            this.heart3.Location = new System.Drawing.Point(999, 21);
+            this.heart3.Name = "heart3";
+            this.heart3.Size = new System.Drawing.Size(36, 29);
+            this.heart3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.heart3.TabIndex = 12;
+            this.heart3.TabStop = false;
+            // 
+            // heart2
+            // 
+            this.heart2.BackColor = System.Drawing.Color.Black;
+            this.heart2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("heart2.BackgroundImage")));
+            this.heart2.Image = ((System.Drawing.Image)(resources.GetObject("heart2.Image")));
+            this.heart2.Location = new System.Drawing.Point(957, 21);
+            this.heart2.Name = "heart2";
+            this.heart2.Size = new System.Drawing.Size(36, 29);
+            this.heart2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.heart2.TabIndex = 13;
+            this.heart2.TabStop = false;
+            // 
+            // heart1
+            // 
+            this.heart1.BackColor = System.Drawing.Color.Black;
+            this.heart1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("heart1.BackgroundImage")));
+            this.heart1.Image = ((System.Drawing.Image)(resources.GetObject("heart1.Image")));
+            this.heart1.Location = new System.Drawing.Point(915, 21);
+            this.heart1.Name = "heart1";
+            this.heart1.Size = new System.Drawing.Size(36, 29);
+            this.heart1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.heart1.TabIndex = 14;
+            this.heart1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1057, 619);
+            this.Controls.Add(this.heart1);
+            this.Controls.Add(this.heart2);
+            this.Controls.Add(this.heart3);
+            this.Controls.Add(this.labelScore);
             this.Controls.Add(this.spaceship);
             this.Controls.Add(this.bullet);
             this.Controls.Add(this.bRestart);
@@ -218,6 +277,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.comet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.comet6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bullet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.heart3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.heart2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.heart1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -237,6 +299,10 @@
         private System.Windows.Forms.Label labelLose;
         private System.Windows.Forms.Button bRestart;
         private System.Windows.Forms.PictureBox bullet;
+        private System.Windows.Forms.Label labelScore;
+        private System.Windows.Forms.PictureBox heart3;
+        private System.Windows.Forms.PictureBox heart2;
+        private System.Windows.Forms.PictureBox heart1;
     }
 }
 
